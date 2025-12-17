@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020617;
+    /* Adicionando uma fonte mais limpa se desejar */
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Espaçamento para o conteúdo não subir para baixo do header */
+.scroll-mt-header {
+    scroll-margin-top: 100px;
+}
+
+/* Estilo para links ativos (opcional) */
+nav ul li a {
+    position: relative;
+}
+
+/* Efeito simples de hover nos links */
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Animação de entrada suave para a Hero */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Garante que o fundo escuro ocupe tudo se a imagem falhar */
+section {
+    background-color: #020617;
+}
